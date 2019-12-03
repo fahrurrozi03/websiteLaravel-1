@@ -36,7 +36,15 @@ class adddataController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $request->validate([
+          'nama' => 'required',
+          'nama_project' => 'required',
+          'about' => 'required',
+          'sc' => 'required',
+          'demo' => 'required',
+        ]);
+        Data::create($request->all());
+        return redirect('/projects')->with('status','Data Berhasil Ditambahkan');
     }
 
     /**
@@ -58,7 +66,7 @@ class adddataController extends Controller
      */
     public function edit(Data $data)
     {
-        //
+        return view('data.edit', compact('data'));
     }
 
     /**
@@ -70,7 +78,17 @@ class adddataController extends Controller
      */
     public function update(Request $request, Data $data)
     {
-        //
+      Data::where('id', $data->id)
+          -> update([
+            'nama' => $request->nama,
+            'nama_project' => $request->nama_project,
+            'about' => $request->about,
+            'sc' => $request->sc,
+            'demo' => $request->demo,
+            'access' => $request->access,
+          ]);
+          return redirect('/projects')->with('status','Data Berhasil Diedit');
+
     }
 
     /**
@@ -81,6 +99,7 @@ class adddataController extends Controller
      */
     public function destroy(Data $data)
     {
-        //
+        Data::destroy($data->id);
+        return redirect('projects');
     }
 }

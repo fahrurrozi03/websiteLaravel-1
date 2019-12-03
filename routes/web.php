@@ -10,19 +10,17 @@
 | contains the "web" middleware group. Now create something great!
 |
 */
-
-// Route::get('/', function () {
-//     return view('index');
-// });
-// Route::get('/about', function () {
-// 	$nama = 'Rozi';
-//     return view('about', ['nama'=> $nama]);
-// });
-// Route::get('/home', 'ClientController@home');
-// Route::get('/buatdata', 'ClientController@kedata');
 Route::get('/', 'myprojectController@index');
 Route::get('/about', 'myprojectController@about');
-Route::get('/projects', 'adddataController@index');
-Route::get('/adddata', 'adddataController@index');
-Route::get('/adddata/create', 'adddataController@create');
-Route::get('/details/{data}', 'adddataController@show');
+// Route::get('/projects', 'adddataController@index');
+// Route::get('/adddata', 'adddataController@index');
+// Route::get('/adddata/create', 'adddataController@create');
+// Route::get('/details/{data}', 'adddataController@show');
+// Route::post('/addData', 'adddataController@store');
+// Route::delete('/details/{data}', 'adddataController@destroy');
+// Route::get('/details/{data}/edit', 'adddataController@edit');
+// Route::patch('/details/{data}', 'adddataController@update');
+Route::resource('details', 'adddataController');
+Route::resource('projects', 'adddataController');
+Route::resource('adddata', 'adddataController');
+Route::resource('addData', 'adddataController');

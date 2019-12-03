@@ -20,7 +20,7 @@
                </p>
 
                @else
-               <p class="lead text-muted">Sebuah website untuk menampung beberapa project Fahrur Rozi</p>
+               <p class="lead texta-muted">Sebuah website untuk menampung beberapa project Fahrur Rozi</p>
                <p>
                   <a href="{{url('/projects')}}" class="btn btn-primary">Cek Disini</a>
                </p>
@@ -28,7 +28,7 @@
             </div>
          </section>
       </div>
-   
+
       <br>
       <br>
       <br>

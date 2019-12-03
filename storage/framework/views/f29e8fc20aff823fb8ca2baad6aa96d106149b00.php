@@ -25,7 +25,7 @@
   </button>
   <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
     <div class="navbar-nav">
-      <a class="nav-item nav-link active" href=" <?php echo e(url('/')); ?> ">Home <span class="sr-only">(current)</span></a>
+      <a class="nav-item nav-link" href=" <?php echo e(url('/')); ?> ">Home <span class="sr-only">(current)</span></a>
       <a class="nav-item nav-link" href="<?php echo e(url('/about')); ?>">About</a>
       <!-- <a class="nav-item nav-link" href="<?php echo e(url('/projects')); ?>">Projects</a> -->
       <a class="nav-item nav-link" href="<?php echo e(url('/projects')); ?>">Project</a>

@@ -5,11 +5,15 @@
 @section('content')
 <div class="container">
 	<div class="row">
-		<div class="col-12">
+		<div class="col-8">
 			<h1 class="my-4">~ Project's</h1>
-			@if(Auth::user())
-			<a href="/adddata/create" class="btn btn-primary my-4">Add Data</a>
-			@else
+
+			<a href="/adddata/create" class="btn btn-primary my-2">Add Data</a>
+			@if (session('status'))
+	<div class="alert alert-success">
+			{{ session('status') }}
+	</div>
+@endif
 			@foreach ($data as $dt)
 			<ul class="list-group">
   <li class="list-group-item d-flex justify-content-between align-items-center">
@@ -18,7 +22,7 @@
   </li>
   @endforeach
 </ul>
-  	@endif
+
 	</div>
 	</div>
 </div>
