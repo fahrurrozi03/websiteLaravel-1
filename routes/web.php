@@ -24,3 +24,7 @@ Route::resource('details', 'adddataController');
 Route::resource('projects', 'adddataController');
 Route::resource('adddata', 'adddataController');
 Route::resource('addData', 'adddataController');
+Route::get('admin', 'adminController@index');
+Route::get('/logout', 'Auth\LoginController@logout')->name('logout');
+Route::get('/admin', 'adminController@index')->name('admin');
+Auth::routes();
