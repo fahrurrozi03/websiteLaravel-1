@@ -25,7 +25,7 @@ class serviceAdmin extends Controller
      */
     public function create()
     {
-        //
+        return view('admin.service.addprice');
     }
 
     /**
@@ -45,7 +45,6 @@ class serviceAdmin extends Controller
         // ]);
         // Data::create($request->all());
         // return redirect('/projects')->with('status','Data Berhasil Ditambahkan');
-        return 'hahaha';
     }
 
     /**
