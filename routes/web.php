@@ -26,5 +26,6 @@ Route::resource('adddata', 'adddataController');
 Route::resource('addData', 'adddataController');
 Route::get('admin', 'adminController@index')->name('admin');
 Route::get('/logout', 'Auth\LoginController@logout')->name('logout');
-Route::get('service/priceslist', 'adminController@pricelist')->name('pricelist');
+Route::get('service/priceslist', 'serviceAdmin@index')->name('pricelist');
+Route::get('service/priceslist/add', 'serviceAdmin@store')->name('addprice');
 Route::Auth();

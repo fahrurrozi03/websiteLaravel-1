@@ -3,10 +3,9 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use App\User;
-use App\DataHarga;
+use App\Dataharga;
 
-class adminController extends Controller
+class serviceAdmin extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -15,12 +14,9 @@ class adminController extends Controller
      */
     public function index()
     {
-
-        
-        return view('admin.index');
-
+        $dataharga = Dataharga::all();
+        return view('admin.service.pricelist', compact('dataharga'));
     }
-
 
     /**
      * Show the form for creating a new resource.
@@ -40,7 +36,16 @@ class adminController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        // $request->validate([
+        //   'nama' => 'required',
+        //   'nama_project' => 'required',
+        //   'about' => 'required',
+        //   'sc' => 'required',
+        //   'demo' => 'required',
+        // ]);
+        // Data::create($request->all());
+        // return redirect('/projects')->with('status','Data Berhasil Ditambahkan');
+        return 'hahaha';
     }
 
     /**
