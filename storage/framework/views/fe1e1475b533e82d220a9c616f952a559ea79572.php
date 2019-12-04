@@ -1,6 +1,7 @@
 <?php $__env->startSection('title', 'Detail data'); ?>
 
 <?php $__env->startSection('content'); ?>
+<?php dump($data->nama); ?>
 <div class="container">
 	<div class="row">
 		<div class="col-6">

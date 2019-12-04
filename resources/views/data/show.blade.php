@@ -3,6 +3,7 @@
 @section('title', 'Detail data')
 
 @section('content')
+@dump($data->nama)
 <div class="container">
 	<div class="row">
 		<div class="col-6">

@@ -55,7 +55,7 @@ class adddataController extends Controller
      */
     public function show(Data $data)
     {
-        return view('data.show',compact('data'));
+        return view('data.show', ['data' => $data]);
     }
 
     /**

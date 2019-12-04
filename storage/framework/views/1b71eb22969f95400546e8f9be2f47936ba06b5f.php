@@ -18,7 +18,7 @@
   <li class="list-group-item d-flex justify-content-between align-items-center">
   	<?php echo e($dt->nama_project); ?>
 
-  	    <a href="/details/<?php echo e($dt->id); ?>" class="badge badge-info">Detail</a>
+  	    <a href="<?php echo e(url('/details/')); ?>/<?php echo e($dt->id); ?>" class="badge badge-info">Detail</a>
   </li>
   <?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?>
 </ul>

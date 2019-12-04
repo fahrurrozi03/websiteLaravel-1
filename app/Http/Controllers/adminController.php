@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\User;
 
 class adminController extends Controller
 {
@@ -11,9 +12,12 @@ class adminController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function index()
+    public function index($guard = null)
     {
+
+        
         return view('admin.index');
+
     }
 
     /**

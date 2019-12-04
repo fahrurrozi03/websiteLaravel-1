@@ -18,7 +18,7 @@
 			<ul class="list-group">
   <li class="list-group-item d-flex justify-content-between align-items-center">
   	{{$dt->nama_project}}
-  	    <a href="/details/{{$dt->id}}" class="badge badge-info">Detail</a>
+  	    <a href="{{url('/details/')}}/{{$dt->id}}" class="badge badge-info">Detail</a>
   </li>
   @endforeach
 </ul>
