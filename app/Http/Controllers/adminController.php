@@ -12,12 +12,16 @@ class adminController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function index($guard = null)
+    public function index()
     {
 
         
         return view('admin.index');
 
+    }
+    public function pricelist()
+    {
+        return view('admin.service.pricelist');
     }
 
     /**

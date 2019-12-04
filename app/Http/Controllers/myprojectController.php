@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
 use App\project;
+use Illuminate\Support\Facades\Session;
 
 
 class myprojectController extends Controller
@@ -16,8 +17,12 @@ class myprojectController extends Controller
      */
     public function index()
     {
-        // $users = DB::table('project')->get();
-        return view('index');
+         if(!Session::get('login')){
+            return redirect('login')->with('alert','Kamu harus login dulu');
+        }
+        else{
+            return view('index');
+        }
     }
     public function about() 
     {

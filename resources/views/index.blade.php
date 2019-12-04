@@ -3,6 +3,8 @@
 @section('title', 'Welcome')
 
 @section('content')
+<!-- Button trigger modal -->
+<!-- Modal -->
     <body>
       <br>
       <br>
@@ -12,7 +14,7 @@
 
          <section class="jumbotron text-center">
             <div class="container">
-               <h1 class="jumbotron-heading">Share project</h1>
+               <h1 class="jumbotron-heading">Share {{Session::get('name')}}</h1>
                <p class="lead texta-muted">Sebuah website untuk menampung beberapa project Fahrur Rozi</p>
                <p>
                   <a href="{{url('/projects')}}" class="btn btn-primary">Cek Disini</a>
@@ -27,5 +29,7 @@
       <br>
       <br>
     </body>
+
+   </script>
 
 @endsection
