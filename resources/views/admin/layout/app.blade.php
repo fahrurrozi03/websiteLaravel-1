@@ -311,7 +311,7 @@
         <div class="container my-auto">
           <div class="copyright text-center my-auto">
             <span>Copyright &copy; Fahrur Rozi 2019</span>
-          </div>
+          </div> 
         </div>
       </footer>
 
@@ -334,14 +334,14 @@
   </div>
   <!-- Bootstrap core JavaScript-->
   <script>$('#example').popover(options)</script>
-  <script src="{{asset('vendor/jquery/jquery.min.js')}}"></script>
-  <script src="{{asset('vendor/bootstrap/js/bootstrap.bundle.min.js')}}"></script>
+  <script src="https://raw.githubusercontent.com/fahrurrozi03/websiteLaravel-1/master/public/vendor/jquery/jquery.min.js"></script>
+  <script src="https://raw.githubusercontent.com/fahrurrozi03/websiteLaravel-1/master/public/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
   <!-- Core plugin JavaScript-->
-  <script src="{{asset('vendor/jquery-easing/jquery.easing.min.js')}}"></script>
+  <script src="https://raw.githubusercontent.com/fahrurrozi03/websiteLaravel-1/master/public/vendor/jquery-easing/jquery.easing.min.js"></script>
   <!-- Custom scripts for all pages-->
-  <script src="{{asset('js/sb-admin-2.min.js')}}"></script>
+  <script src="https://raw.githubusercontent.com/fahrurrozi03/websiteLaravel-1/master/public/js/sb-admin-2.min.js"></script>
   <!-- Page level plugins -->
-  <script src="{{asset('vendor/chart.js/Chart.min.js')}}"></script>
+  <script src="https://raw.githubusercontent.com/fahrurrozi03/websiteLaravel-1/master/public/vendor/chart.js/Chart.min.js"></script>
   <!-- Page level custom scripts -->
   <script src="{{asset('js/demo/chart-area-demo.js')}}"></script>
   <script src="{{asset('js/demo/chart-pie-demo.js')}}"></script>
