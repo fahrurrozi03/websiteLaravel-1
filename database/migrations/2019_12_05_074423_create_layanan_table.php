@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class CreateTableHargaSemua extends Migration
+class CreateLayananTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,8 +13,9 @@ class CreateTableHargaSemua extends Migration
      */
     public function up()
     {
-        Schema::create('harga', function (Blueprint $table) {
+        Schema::create('layanan', function (Blueprint $table) {
             $table->increments('id');
+            $table->string('sosmed');
             $table->string('nama_layanan');
             $table->string('min');
             $table->string('max');
@@ -31,6 +32,6 @@ class CreateTableHargaSemua extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('harga');
+        Schema::dropIfExists('layanan');
     }
 }

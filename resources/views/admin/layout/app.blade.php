@@ -39,7 +39,7 @@
       <!-- Sidebar - Brand -->
       <a class="sidebar-brand d-flex align-items-center justify-content-center" href="{{url('/')}}">
         <div class="sidebar-brand-icon rotate-n-15">
-          <i class="fas fa-laugh-wink"></i>
+          <i class="fas fa-smile-wink"></i>
         </div>
         <div class="sidebar-brand-text mx-3">FR ADMIN <sup>2</sup></div>
       </a>
@@ -108,10 +108,10 @@
           <span>Riwayat Topup</span></a>
       </li>
 
- <hr class="sidebar-divider d-none d-md-block">
+ <hr class="sidebar-divider d-block d-md-block">
 
       <!-- Sidebar Toggler (Sidebar) -->
-      <div class="text-center d-none d-md-inline">
+      <div class="text-center d-block d-md-inline">
         <button class="rounded-circle border-0" id="sidebarToggle"></button>
       </div>
 
@@ -128,7 +128,7 @@
         <nav class="navbar navbar-expand navbar-light bg-white topbar mb-4 static-top shadow">
 
           <!-- Sidebar Toggle (Topbar) -->
-          <button id="sidebarToggleTop" class="btn btn-link d-md-none rounded-circle mr-3">
+          <button id="sidebarToggleTop" class="btn btn-link d-md-block rounded-circle mr-1">
             <i class="fa fa-bars"></i>
           </button>
 
@@ -333,6 +333,7 @@
     </div>
   </div>
   <!-- Bootstrap core JavaScript-->
+  <script>$('#example').popover(options)</script>
   <script src="{{asset('vendor/jquery/jquery.min.js')}}"></script>
   <script src="{{asset('vendor/bootstrap/js/bootstrap.bundle.min.js')}}"></script>
   <!-- Core plugin JavaScript-->
@@ -349,7 +350,8 @@
   <script src="{{asset('vendor/datatables/dataTables.bootstrap4.min.js')}}"></script>
   <!-- Page level custom scripts -->
   <script src="{{asset('js/demo/datatables-demo.js')}}"></script>
-
+  <script type="text/javascript" src="https://smmreseller.co.id/assets/js/app.js"></script>
+<script type="text/javascript" src="https://smmreseller.co.id/assets/js/main.min.js?1575523848"></script>
 </body>
 
 </html>

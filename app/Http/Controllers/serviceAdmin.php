@@ -3,7 +3,8 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use App\Dataharga;
+use App\Layanan;
+use App\Http\Controller\Auth;
 
 class serviceAdmin extends Controller
 {
@@ -14,7 +15,7 @@ class serviceAdmin extends Controller
      */
     public function index()
     {
-        $dataharga = Dataharga::all();
+        $dataharga = Layanan::all();
         return view('admin.service.pricelist', compact('dataharga'));
     }
 
@@ -36,16 +37,17 @@ class serviceAdmin extends Controller
      */
     public function store(Request $request)
     {
-        // $request->validate([
-        //   'nama' => 'required',
-        //   'nama_project' => 'required',
-        //   'about' => 'required',
-        //   'sc' => 'required',
-        //   'demo' => 'required',
-        // ]);
-        // Data::create($request->all());
-        // return redirect('/projects')->with('status','Data Berhasil Ditambahkan');
-    }
+        $request->validate([
+            'sosmed' => 'required',
+             'nama_layanan' => 'required',
+             'min' => 'required',
+             'max' => 'required',
+             'harga1k' => 'required',
+             'keterangan' => 'required',
+        ]);
+        Layanan::create($request->all());
+        return redirect('/admin/service/priceslist/')->with('status', 'Layanan Berhasil Ditambahkan');
+        }
 
     /**
      * Display the specified resource.
